@@ -1,0 +1,459 @@
+{
+  "Simple Comment Block":{
+    "prefix":"_note_simple",
+    "body":[
+      "/*",
+      "|--------------------------------------------------------------------------",
+      "| ${1:Comment title}",
+      "|--------------------------------------------------------------------------",
+      "*/",
+      "$0"
+    ],
+    "description":"Simple Comment Block"
+  },
+  "Extended Comment Block":{
+    "prefix":"_note_extended",
+    "body":[
+      "/*",
+      "|--------------------------------------------------------------------------",
+      "| ${1:Comment title}",
+      "|--------------------------------------------------------------------------",
+      "|",
+      "| ${2:Comment description}",
+      "| ",
+      "| ",
+      "|",
+      "*/",
+      "$0"
+    ],
+    "description":"Extended Comment Block"
+  },
+  "PHPDoc Comment Block":{
+    "prefix":"_note_doc",
+    "body":[
+      "/**",
+      " * ${1:Comment description}.",
+      " *",
+      " * @param ${2:ParamType} ${3:ParamName}",
+      " *",
+      " * @return ${4:ReturnType}",
+      " */",
+      ""
+    ],
+    "description":"PHPDoc Comment Block"
+  },
+  "Namespace Declaration":{
+    "prefix":"_namespace",
+    "body":[
+      "namespace ${1:MyNamespace}\\${2:SubNamespace};",
+      "$0"
+    ],
+    "description":"PHP Namespace Declaration"
+  },
+  "Use Statement":{
+    "prefix":"_use",
+    "body":[
+      "use ${1:Namespace}\\${2:SubNamespace1}\\${3:SubNamespace2}\\${4:ClassName}${5: as Alias};",
+      "$0"
+    ],
+    "description":"PHP Use Statement"
+  },
+  "Class":{
+    "prefix":"_class",
+    "body":[
+      "class ${1:ClassName}",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP Class"
+  },
+  "Abstract Class":{
+    "prefix":"_abstract_class",
+    "body":[
+      "abstract class ${1:AbstractClassName}",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP Abstract Class"
+  },
+  "Interface":{
+    "prefix":"_interface",
+    "body":[
+      "interface ${1:InterfaceName}",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP Interface"
+  },
+  "Trait":{
+    "prefix":"_trait",
+    "body":[
+      "trait ${1:TraitName}",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP Trait"
+  },
+  "__construct()":{
+    "prefix":"_construct",
+    "body":[
+      "public function __construct($${1:$args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __construct()"
+  },
+  "__destruct()":{
+    "prefix":"_destruct",
+    "body":[
+      "public function __destruct()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __destruct()"
+  },
+  "__call()":{
+    "prefix":"_call",
+    "body":[
+      "public function __call($${1:method}, $${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __call()"
+  },
+  "__callStatic()":{
+    "prefix":"_callStatic",
+    "body":[
+      "public static function __callStatic($${1:method}, $${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __callStatic()"
+  },
+  "__get()":{
+    "prefix":"_get",
+    "body":[
+      "public function __get($${1:property})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __get()"
+  },
+  "__set()":{
+    "prefix":"_set",
+    "body":[
+      "public function __set($${1:property}, $${2:value})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __set()"
+  },
+  "__isset()":{
+    "prefix":"_isset",
+    "body":[
+      "public function __isset($${1:property})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __isset()"
+  },
+  "__unset()":{
+    "prefix":"_unset",
+    "body":[
+      "public function __unset($${1:property})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __unset()"
+  },
+  "__sleep()":{
+    "prefix":"_sleep",
+    "body":[
+      "public function __sleep()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __sleep()"
+  },
+  "__wakeup()":{
+    "prefix":"_wakeup",
+    "body":[
+      "public function __wakeup()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __wakeup()"
+  },
+  "__toString()":{
+    "prefix":"_toString",
+    "body":[
+      "public function __toString()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __toString()"
+  },
+  "__invoke()":{
+    "prefix":"_invoke",
+    "body":[
+      "public function __invoke($${1:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __invoke()"
+  },
+  "__set_state()":{
+    "prefix":"_setState",
+    "body":[
+      "public static function __set_state($${1:properties})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __set_state()"
+  },
+  "__clone()":{
+    "prefix":"_clone",
+    "body":[
+      "public function __clone()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __clone()"
+  },
+  "__debugInfo()":{
+    "prefix":"_debugInfo",
+    "body":[
+      "public function __debugInfo()",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP __debugInfo()"
+  },
+  "Public Class Method":{
+    "prefix":"_method_public",
+    "body":[
+      "public function ${1:methodName}($${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"Public Class Method"
+  },
+  "Private Class Method":{
+    "prefix":"_method_private",
+    "body":[
+      "private function ${1:methodName}($${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"Private Class Method"
+  },
+  "Protected Class Method":{
+    "prefix":"_method_protected",
+    "body":[
+      "protected function ${1:methodName}($${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"Protected Class Method"
+  },
+  "Static Public Class Method":{
+    "prefix":"_method_static_public",
+    "body":[
+      "public static function ${1:methodName}($${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"Static Public Class Method"
+  },
+  "Static Private Class Method":{
+    "prefix":"_method_static_private",
+    "body":[
+      "private static function ${1:methodName}($${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"Static Private Class Method"
+  },
+  "Static Protected Class Method":{
+    "prefix":"_method_static_protected",
+    "body":[
+      "protected static function ${1:methodName}($${2:args})",
+      "{",
+      "\t$0",
+      "}"
+    ],
+    "description":"Static Protected Class Method"
+  },
+  "Getter Method":{
+    "prefix":"_getter",
+    "body":[
+      "public function get$1()",
+      "{",
+      "\treturn $$this->$1;",
+      "}"
+    ],
+    "description":"PHP OOP - Getter Method"
+  },
+  "Setter Method":{
+    "prefix":"_setter",
+    "body":[
+      "public function set$1($$1)",
+      "{",
+      "\t$$this->$1 = $$1;",
+      "}"
+    ],
+    "description":"PHP OOP - Setter Method"
+  },
+  "Static Property":{
+    "prefix":"_staticprop",
+    "body":[
+      "private static $$1;"
+    ],
+    "description":"PHP OOP - Static Property"
+  },
+  "Static Method":{
+    "prefix":"_staticmethod",
+    "body":[
+      "public static function $1()",
+      "{",
+      "\t// Add your code here",
+      "}"
+    ],
+    "description":"PHP OOP - Static Method"
+  },
+  "If Statement":{
+    "prefix":"_if",
+    "body":[
+      "if (${1:condition}) {",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP if statement"
+  },
+  "If Else Statement":{
+    "prefix":"_ifelse",
+    "body":[
+      "if (${1:condition}) {",
+      "\t$0",
+      "} else {",
+      "\t",
+      "}"
+    ],
+    "description":"PHP if...else statement"
+  },
+  "Isset Function":{
+    "prefix":"_isset",
+    "body":[
+      "isset(${1:variable}) $0"
+    ],
+    "description":"PHP isset() function"
+  },
+  "Empty Function":{
+    "prefix":"_empty",
+    "body":[
+      "empty(${1:variable}) $0"
+    ],
+    "description":"PHP empty() function"
+  },
+  "Count Function":{
+    "prefix":"_count",
+    "body":[
+      "count(${1:array_or_countable}) $0"
+    ],
+    "description":"PHP count() function"
+  },
+  "Foreach Loop":{
+    "prefix":"_foreach",
+    "body":[
+      "foreach ($${1:array} as $${2:value}) {",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP foreach loop"
+  },
+  "While Loop":{
+    "prefix":"_while",
+    "body":[
+      "while ($${1:condition}) {",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP while loop"
+  },
+  "Do While Loop":{
+    "prefix":"_dowhile",
+    "body":[
+      "do {",
+      "\t$0",
+      "} while ($${1:condition});"
+    ],
+    "description":"PHP do...while loop"
+  },
+  "For Loop":{
+    "prefix":"_for",
+    "body":[
+      "for ($${1:init}; $${2:condition}; $${3:increment}) {",
+      "\t$0",
+      "}"
+    ],
+    "description":"PHP for loop"
+  },
+  "Return Statement":{
+    "prefix":"_return",
+    "body":[
+      "return $${1:value};"
+    ],
+    "description":"PHP return statement"
+  },
+  "Define Constant":{
+    "prefix":"_define",
+    "body":[
+      "define('${1:CONSTANT_NAME}', $${2:value});"
+    ],
+    "description":"PHP define constant"
+  },
+  "Array Declaration":{
+    "prefix":"_array",
+    "body":[
+      "$${1:variable} = [$${2:values}];"
+    ],
+    "description":"PHP array declaration"
+  },
+  "Try-Catch Block":{
+    "prefix":[
+      "try ()"
+    ],
+    "body":[
+      "try {",
+      "\t$1",
+      "} catch (mysqli_sql_exception | PDOException | RuntimeException | Exception | Error | Throwable $$e) {",
+      "\t$2",
+      "}"
+    ],
+    "description":"Creates a try-catch block for exception handling."
+  }
+}
