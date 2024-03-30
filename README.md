@@ -1,6 +1,6 @@
 # PHP VSCode Snippets
 
-PHP snippets for Visual Studio Code. Integrating these snippets into your VSCode setup can significantly enhance productivity during PHP coding.
+PHP snippets for VSCode. Integrating these snippets into your Visual Studio Code setup will significantly enhance productivity during PHP coding.
 
 ## What are Snippets?
 
